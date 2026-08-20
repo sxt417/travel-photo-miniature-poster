@@ -1,4 +1,4 @@
 interface:
   display_name: "旅游照片 3D 沙盘海报"
-  short_description: "将旅行照片重建为具有真实几何厚度的 1:1 实体建筑微缩沙盘海报"
-  default_prompt: "使用 $travel-photo-miniature-poster 将我上传的旅行照片重建为 1:1 实体建筑微缩沙盘海报。"
+  short_description: "将旅行照片重建为带可信地下世界与自动信息表的 3:4 微缩沙盘海报"
+  default_prompt: "使用 $travel-photo-miniature-poster 将我上传的旅行照片重建为 3:4 实体建筑微缩沙盘海报，按建筑类型生成可信地下剖面，并自动核验和填写底部地标信息。"
