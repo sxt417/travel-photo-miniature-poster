@@ -26,6 +26,17 @@ $travel-photo-miniature-poster
 使用 $travel-photo-miniature-poster 将这张旅行照片制作成 3:4 实体建筑微缩沙盘海报。
 ```
 
+## 著名建筑测试示例
+
+以下图片用于快速检查 Skill 在不同建筑类型下的输出表现。它们覆盖浅基础坛庙、高塔工程基础和宗教建筑地层剖面三类典型场景。
+
+| 天坛 · 北京 | 埃菲尔铁塔 · 巴黎 | 圣瓦西里大教堂 · 莫斯科 |
+|---|---|---|
+| <img src="assets/examples/temple-of-heaven.png" alt="天坛 3:4 微缩沙盘测试海报" width="300"> | <img src="assets/examples/eiffel-tower.png" alt="埃菲尔铁塔 3:4 微缩沙盘测试海报" width="300"> | <img src="assets/Codex%20%E5%9B%BE%E5%83%8F%202026%E5%B9%B48%E6%9C%8820%E6%97%A5%2014_14_17.png" alt="圣瓦西里大教堂 3:4 微缩沙盘测试海报" width="300"> |
+| 浅层夯土台基、排水与克制的地下厚度 | 四点基础、铁塔真实比例与场地轴线 | 多穹顶独立几何、砖石基础与地层连续性 |
+
+测试时重点检查：画布是否严格为 3:4、底座是否保持规则方形棱柱、建筑是否由独立 3D 几何构成、地下结构是否符合建筑类型、右上角平面图是否与沙盘一致，以及底部信息表是否清晰且字段一致。
+
 ## 安装
 
 将仓库克隆到 Codex Skills 目录：
@@ -45,7 +56,10 @@ travel-photo-miniature-poster/
 ├── agents/
 │   └── openai.yaml
 ├── assets/
-│   └── layout-reference-3x4.png
+│   ├── layout-reference-3x4.png
+│   └── examples/
+│       ├── temple-of-heaven.png
+│       └── eiffel-tower.png
 └── references/
     └── global-underground-sections.md
 ```
@@ -53,6 +67,7 @@ travel-photo-miniature-poster/
 - `SKILL.md`：场景分析、比例约束、地下剖面、平面图、版式与质量门禁。
 - `agents/openai.yaml`：Codex 中展示的 Skill 名称、简介和默认调用提示。
 - `assets/layout-reference-3x4.png`：3:4 海报构图、标题层级、平面图与信息表的视觉参考。
+- `assets/examples/`：README 中用于回归检查的著名建筑测试图。
 - `references/global-underground-sections.md`：面向全球建筑类型的地下剖面生成规则。
 
 ## 输出原则
